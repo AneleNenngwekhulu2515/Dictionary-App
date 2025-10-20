@@ -1,0 +1,1 @@
+ /home/wtc/Documents/Dictionary-App/.dart_tool/flutter_build/ec7df5d56f9e3dc17a312f54a7658652/native_assets.json: 
