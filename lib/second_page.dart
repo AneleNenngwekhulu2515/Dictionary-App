@@ -1,14 +1,23 @@
 import 'package:flutter/material.dart';
 
-class SecondPage extends StatelessWidget{
+class SecondPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('second page'),
+        title: Text('Second Page'),
+        centerTitle: true,
       ),
       body: Center(
-        child: Text('Welcome to the second page'),
+        child: ElevatedButton(
+          style: ElevatedButton.styleFrom(
+            padding: EdgeInsets.all(20),
+          ),
+          child: Text('Go Back to First Page', style: TextStyle(fontSize: 20)),
+          onPressed: () {
+            Navigator.pop(context); 
+          },
+        ),
       ),
     );
   }
