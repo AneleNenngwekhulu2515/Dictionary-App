@@ -56,7 +56,7 @@ flutter:
 
   assets:
     - assets/images/main.webp
-    - assets/images/secondpage.avif
+    - assets/images/images.jpeg
 
 
   # To add assets to your application, add an assets section, like this:

@@ -51,9 +51,10 @@ class FirstPage extends StatelessWidget {
               const SizedBox(height: 20), 
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
+                  minimumSize: const Size(200, 60),
                   backgroundColor: const Color.fromARGB(120, 53, 117, 10)
                 ),
-                child: const Text('Start', style: TextStyle(fontSize: 20, color: Colors.black)),
+                child: const Text('Start', style: TextStyle(fontSize: 25, color: Colors.black)),
                 onPressed: () {
                   Navigator.push(
                     context,
