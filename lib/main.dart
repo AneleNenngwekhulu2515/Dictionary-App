@@ -34,6 +34,10 @@ class FirstPage extends StatelessWidget {
           child: Column(
             mainAxisSize: MainAxisSize.min, 
             children: [
+              Image.asset('images/open_green_book-removebg-preview.png',
+              height: 120,
+              ),
+              const SizedBox(height: 20),
               const Text(
                 'Welcome to the Dictionary',
                 style: TextStyle(

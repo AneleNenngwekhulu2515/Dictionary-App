@@ -57,6 +57,7 @@ flutter:
   assets:
     - assets/images/main.webp
     - assets/images/images.jpeg
+    - assets/images/open_green_book-removebg-preview.png
 
 
   # To add assets to your application, add an assets section, like this:
