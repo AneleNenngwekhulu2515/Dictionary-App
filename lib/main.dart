@@ -1,32 +1,68 @@
-import 'package:dictionary_app/second_page.dart';
 import 'package:flutter/material.dart';
+import 'second_page.dart';
 
 void main() {
-  runApp(MaterialApp(
-    home: FirstPage(),
-  ));
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const MaterialApp(
+      home: FirstPage(),
+    );
+  }
 }
 
 class FirstPage extends StatelessWidget {
+  const FirstPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('First Page'),
-        centerTitle: true,
-      ),
-      body: Center(
-        child: ElevatedButton(
-          style: ElevatedButton.styleFrom(
-            padding: EdgeInsets.all(20),
+      body: Container(
+        decoration: const BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage("assets/images/main.webp"),
+            fit: BoxFit.cover,
           ),
-          child: Text('Go to Second Page', style: TextStyle(fontSize: 20)),
-          onPressed: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(builder: (context) => SecondPage()),
-            );
-          },
+        ),
+        child: Center(
+          child: Column(
+            mainAxisSize: MainAxisSize.min, 
+            children: [
+              const Text(
+                'Welcome to the Dictionary',
+                style: TextStyle(
+                  fontSize: 40,
+                  color: Color.fromARGB(255, 12, 66, 24),
+                  fontWeight: FontWeight.bold,
+                  shadows: [
+                    Shadow(
+                      offset: Offset(1, 5),
+                      blurRadius: 3,
+                      color: Colors.black54,
+                    ),
+                  ],
+                ),
+              ),
+              const SizedBox(height: 20), 
+              ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: const Color.fromARGB(120, 53, 117, 10)
+                ),
+                child: const Text('Start', style: TextStyle(fontSize: 20, color: Colors.black)),
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => SecondPage()),
+                  );
+                },
+              ),
+            ],
+          ),
         ),
       ),
     );
