@@ -36,6 +36,7 @@ class FirstPage extends StatelessWidget {
               const Text(
                 'Welcome to the Dictionary',
                 style: TextStyle(
+                  fontFamily: 'LibreBaskerville',
                   fontSize: 40,
                   color: Color.fromARGB(255, 12, 66, 24),
                   fontWeight: FontWeight.bold,
