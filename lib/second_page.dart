@@ -7,7 +7,7 @@ class SecondPage extends StatelessWidget {
       body: Container(
         decoration: const BoxDecoration(
           image: DecorationImage(
-            image: AssetImage("assets/images/images.jpeg"),
+            image: AssetImage("assets/images/main.webp"),
             fit: BoxFit.cover,
           ),
         ),
